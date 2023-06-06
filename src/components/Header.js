@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "./Navigation";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -7,7 +8,7 @@ const Header = () => {
     <div className="flex w-screen items-center">
       {/* Icon */}
       <div className="ml-3">
-        <a herf="#">Icon</a>
+        <Link to={'/'}>Icon</Link>
       </div>
 
       {/* Heading */}

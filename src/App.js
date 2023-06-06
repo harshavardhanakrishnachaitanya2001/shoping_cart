@@ -8,7 +8,6 @@ const App = () => {
       <header>
         <Header />
       </header>
-      <Products />
     </>
   );
 };
