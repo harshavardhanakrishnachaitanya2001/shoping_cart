@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "./components/Header";
+import SiteHome from "./components/SiteHome";
 
 
 const App = () => {
@@ -7,6 +8,7 @@ const App = () => {
     <>
       <header>
         <Header />
+        <SiteHome />
       </header>
     </>
   );
