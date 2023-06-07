@@ -1,13 +1,22 @@
-import React from 'react'
-import InnerNav from '../components/SectionNav'
-const links = [{id:1,linkName:"Men"},{id:2,linkName:"Women"},{id:3,linkName:"Children"}]
+import React from "react";
+import SectionHeading from "../components/SectionHeading";
+import SectionNav from "../components/SectionNav";
+import { Outlet } from "react-router-dom";
+const clothLinks = [
+  { id: 1, linkName: "Men" },
+  { id: 2, linkName: "Women" },
+  { id: 3, linkName: "Children" },
+];
 
 const Cloths = () => {
   return (
-    <div>
-        <InnerNav links = {links}/>
-    </div>
-  )
-}
+    <>
+      <SectionHeading heading="Cloths" />
+      <SectionNav links={clothLinks} />
+      <Outlet />
+      
+    </>
+  );
+};
 
-export default Cloths
+export default Cloths;

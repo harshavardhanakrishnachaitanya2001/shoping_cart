@@ -6,7 +6,7 @@ const SectionNav = ({links}) => {
     <nav>
       <ul className="py-2">
         <li className="flex justify-evenly">
-          {links.map((link, index) => {
+          {links.map((link) => {
             return (
               <Link
                 key={link.id}

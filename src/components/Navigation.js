@@ -19,13 +19,13 @@ const NavLinks = [
     id: 4,
   },
   {
-    name: "Work",
+    name: "Play",
     id: 5,
   },
   {
-    name: "Play",
+    name: "Gadgets",
     id: 6,
-  },
+  }
 ];
 
 const Navigation = () => {
