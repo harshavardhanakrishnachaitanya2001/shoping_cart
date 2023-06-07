@@ -10,7 +10,9 @@ import Kids from "./routes/Kids";
 import App from "./App";
 import HomeProducts from "./routes/HomeProducts";
 import ErrorPage from "./components/ErrorPage";
-import Category from './routes/Category'
+import Men from './components/Men'
+import Women from './components/Women'
+import Children from './components/Children'
 
 const router = createBrowserRouter([
   {
@@ -31,9 +33,17 @@ const router = createBrowserRouter([
     element: <Cloths />,
     children: [
       {
-        path: "/cloths/:id",
-        element: <Category />,
+        path: "/cloths/men",
+        element: <Men />,
       },
+      {
+        path:"/cloths/women",
+        element:<Women />
+      },
+      {
+        path:"/cloths/children",
+        element:<Children />
+      }
     ]
   },
   {
